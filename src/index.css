@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    :root {
+        --color-main: 37, 99, 235; /* main color */
+        --color-main-foreground: 247, 248, 249; /*  main foreground color */
+        --color-text: 64, 79, 101; /*  text color */
+    }
+}
+/* custom css for sidebar dark mode  */
+.dark .rs_main_sidebar {
+    background-color: rgb(3 7 18);
+    color: #d5dae1;
+    box-shadow: 0px 0px 2px 0 rgba(255, 255, 255, 0.5);
+}
+.dark .rs_user {
+    background-color: rgb(3 7 18);
+}
+.dark .rs-offcanvas {
+    background-color: rgb(3 7 18);
+    color: #d5dae1;
+}
+
+/* Header and footer dot style  */
+@layer utilities {
+    .footer-link {
+        @apply relative;
+    }
+
+    .footer-link::after {
+        content: "•";
+        @apply absolute right-[-15px] text-gray-600;
+    }
+
+    .footer-link:last-child::after {
+        content: "";
+    }
+
+    /* Custom styles for the thumb */
+    input[type="range"]::-webkit-slider-thumb {
+        width: 24px;
+        height: 24px;
+        background: #ffff;
+        border-radius: 50%;
+        border: 3px solid #4aa2ff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        appearance: none;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+        width: 24px;
+        height: 24px;
+        background: #ffff;
+        border-radius: 50%;
+        border: 3px solid #4aa2ff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    input[type="range"]::-ms-thumb {
+        width: 24px;
+        height: 24px;
+        background: #ffff;
+        border-radius: 50%;
+        border: 3px solid #4aa2ff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+}

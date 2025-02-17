@@ -1,0 +1,18 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "typescript.tsserver.maxTsServerMemory": 6144,
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#152E44",
+        "titleBar.inactiveBackground": "#152e447b"
+    },
+    "cSpell.words": [
+        "hookform",
+        "tanstack",
+        "clsx",
+        "lucide",
+        "zustand",
+        "tailwindcss",
+        "toastify",
+        "milon27"
+    ]
+}
